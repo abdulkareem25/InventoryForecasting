@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Forecasting Report</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container mt-5">
+    <h1>Sales Forecasting Report</h1>
+    <hr>
+
+    <!-- Search Form -->
+    <!-- <form method="GET" action="/" class="mb-4">
+        <div class="form-group">
+            <label for="search">Search:</label>
+            <input type="text" id="search" name="search" placeholder="Enter month or sales value" class="form-control">
+        </div>
+        <button type="submit" class="btn btn-primary">Search</button>
+    </form> -->
+
+    <!-- Button to trigger AI-based forecasting -->
+    <form method="POST">
+        <button type="submit" class="btn btn-primary mb-3">Trigger AI-Based Forecasting</button>
+    </form>
+
+    <h2>Sales Data by Year</h2>
+    <div id="forecast-table">
+        <!-- Displaying the data -->
+        {{ data_html|safe }}
+    </div>
+</div>
+</body>
+</html>
